@@ -14,6 +14,7 @@ class CategoryController extends Controller
 
     public function show(Category $category)
     {
+        //Se utiliza load() para traer las recetas de la categoría
         return $category->load('Recipes');
     }
 }
