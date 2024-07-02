@@ -21,4 +21,12 @@ class RecipeController extends Controller
     {
         return $recipe->load('category','tags','user');
     }
+
+    public function store(Request $request)
+    {
+        $recipe = Recipe::create($request->all());
+        return response()->json($recipe, 201);
+    }
+
+
 }

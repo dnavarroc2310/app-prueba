@@ -11,6 +11,7 @@ class Tag extends Model
 
     public function recipes()
     {
+        //Pertenece a muchos
         return $this->belongsToMany(Recipe::class);
     }
 }
