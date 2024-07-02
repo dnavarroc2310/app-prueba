@@ -40,21 +40,29 @@ Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
 Sigue estos pasos para instalar y configurar el proyecto:
 
 1. Clona el repositorio:
+   
    ```sh
    git clone https://github.com/tu-usuario/tu-repositorio.git
    cd tu-repositorio
 2. Instala las dependencias de Composer:
+   
+    ```sh
     composer install
 3. Configura el archivo .env:
+   
+    ```sh
    cp .env.example .env
    
-5. Genera la clave de la aplicación:
+4. Genera la clave de la aplicación:
    
+   ```sh
    php artisan key:generate
    
-7. Inicia el servidor de desarrollo:
+5. Inicia el servidor de desarrollo:
    
+   ```sh
    php artisan serve
+   
 Uso
 Puedes interactuar con la API utilizando herramientas como Postman o cURL. Asegúrate de que el servidor esté en funcionamiento antes de realizar solicitudes.
 
